@@ -1,7 +1,8 @@
 import re
+import os, sys
 
-data = [line.strip() for line in open("input.txt", "r")]
-
+data = [line.strip() for line in open(os.path.join(sys.path[0], "input.txt"), "r")]
+solution = open(os.path.join(sys.path[0], "solution.txt"), "w")
 
 # Part 1
 
@@ -19,6 +20,7 @@ for line in data:
         count += 1
 
 print(f"The answer to the first part is {count}")
+solution.write(f"The answer to part 1 is {count}")
 
 
 # Part 2
@@ -44,3 +46,6 @@ for line in data:
         count_2 += 1
 
 print(f"The answer to the second part is {count_2}")
+solution.write(f"The answer to part 2 is {count_2}")
+
+solution.close()
