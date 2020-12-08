@@ -47,48 +47,6 @@ answer = len(validate_passports)
 print(f"The answer to part 1 is {answer}")
 
 
-# passport_data = (passport_attributes.split(" ") for passport_attributes in data)
-
-# passports = lambda: (
-#     passport_data
-#     for passport_chunk in data_chunked_by_passport_slightly_cleaner()
-#     for passport_data in passport_chunk
-# )
-
-# data_chunked_by_passport = (
-#     list(g) for k, g in groupby(passport_data, lambda x: x != "") if k
-# )
-
-
-# data_chunked_by_passport_slightly_cleaner = lambda: (
-#     passport_data.split(" ")
-#     for passport_chunk in data_chunked_by_passport
-#     for passport_data in passport_chunk
-# )
-
-
-# for passport in data_chunked_by_passport:
-#     print(passport)
-
-# passport_attributes
-#             for passport_attributes in passport_data_split
-#             for item in sublist
-
-
-# print(list(passports))
-# passports = (passport_list_to_object(passport) for passport in passports)
-
-# def passport_list_to_object(passport_list):
-#     passport_object = {}
-#     for passport_list_item in passport_list:
-#         print(passport_list_item)
-#         (key, value) = passport_list_item.split(':')
-#         passport_object[key] = value
-#     return passport_object
-
-# passports = (passport_list_to_object(passport) for passport in passports)
-
-
 solution.write(f"The answer to part 1 is {answer}")
 
 solution.close()
