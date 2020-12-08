@@ -30,7 +30,7 @@ def count_trees(data, deltay, deltax):
         # print(f"X,Y coordinates are ({character_index}, {line_index})")
         # print(f"X,Y coordinates are {character_index}, {line_index}")
 
-        print(f"line length is {len(line_data)}")
+        print(f"max index is {len(line_data) - 1}")
         print(f"character_index is {character_index}")
         print(f"wrapped to {wrapped_character_index}")
 
